@@ -1,9 +1,11 @@
 // 복습 목표 : 사용자경험 향상을 위해, 두개의 웹/앱 어플리케이션 작동을 강조한다 >> 제목화면클릭시 내용화면전환으로 느끼게끔 하면 된다.
 // 복습 방향 : appendchild를 안써보자! innerHTML로 기존 화면 내용을 없애고 라우터를 이용해 화면을 전환하자.
 
+const container = document.getElementById('root');
+const ajax = new XMLHttpRequest();
+const content = document.creatElement('div');
 const NEWS_URL = 'https://api.hnpwa.com/v0/news/1.json';
 const CONTENT_URL = 'https://api.hnpwa.com/v0/item/@id.json';
-
 
 function getData(url){
     ajax.open('GET',url,false);
