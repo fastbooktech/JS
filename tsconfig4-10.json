@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "strict": true,
+        "module": "CommonJS",
+        "sourceMap": true,
+        // target을 제외하고 lib 라이브러리를 추가하여 async 사용 기반 마련
+        // "target": "ES6",
+        "lib": [
+            "es6",
+            "dom"
+        ]
+    }
+}
